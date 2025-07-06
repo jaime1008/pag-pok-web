@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Listado from "./pages/Listado";
-import Filtrado from "./pages/Filtrado";
 import Devteam from "./pages/Devteam"
 import InfoApi from "./pages/InfoApi";
 import Navbar from "./components/Navbar";
@@ -14,8 +13,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/listado" element={<Listado />} />
-        <Route path="/Filtrado" element={<Equipo />} />
-        <Route path="/Devteam" element={<Nosotros />} />
+        <Route path="/info-api" element={<InfoApi/>}/>
+        <Route path="/Devteam" element={<Devteam />} />
         <Route path="/pokemon/:nombre" element={<PokemonDetalle/>}/>
       </Routes>
     </Router>

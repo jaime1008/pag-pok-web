@@ -5,9 +5,9 @@ export default function Navbar() {
     <nav className="bg-blue-600 p-4 text-white">
       <ul className="flex gap-4">
         <li><Link to="/">HOME</Link></li>
-        <li><Link to="/listado">LISTADO</Link></li>
-        <li><Link to="/equipo">EQUIPO</Link></li>
-        <li><Link to="/nosotros">NOSOTROS</Link></li>
+        <li><Link to="/Listado">LISTADO</Link></li>
+        <li><Link to="/InfoApi">Información API</Link></li>
+        <li><Link to="/Devteam">Contactanos</Link></li>
       </ul>
     </nav>
   );

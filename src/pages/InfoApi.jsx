@@ -1,15 +1,16 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-export default function PokemonDetalle(){
+export default function InfoApi(){
     const {nombre} = useParams();
     const [pokemon, setPokemon] = useState(null);
 
+    <h1>informacion de la api</h1>
     useEffect(()=>{
         const obtenerPokemon = async()=>{
             try {
                 const res = await
-                fetch(https://pokeapi.co/api/v2/pokemon/${nombre});
+                fetch(`https://pokeapi.co/api/v2/pokemon/${nombre}`);
                     const data = await res.json();
                     setPokemon(data);
             } 
@@ -28,7 +29,7 @@ export default function PokemonDetalle(){
             <h2 className="text-3xl font-bold capitalize">{pokemon.name}</h2>
             <img src={pokemon.sprites.front_default} alt={pokemon.name} className=" mx-auto my-4 w-32 h-32" />
             <p><strong>Altura:</strong>{pokemon.height}</p>
-            <p><strong>Peso:</strong>{pokemon.width}</p>
+            <p><strong>Peso:</strong>{pokemon.weigth}</p>
             <p><strong>Habilidades:</strong></p>
             <ul>{pokemon.abilities.map((hab, index)=> (
                 <li key={index}>{hab.ability.name}</li>

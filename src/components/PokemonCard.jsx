@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Card, CardContent, Typography, CircularProgress } from '@mui/material';
-import {link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import styled from '@emotion/styled';
 
 const PokemonCard = ({ url }) => {
