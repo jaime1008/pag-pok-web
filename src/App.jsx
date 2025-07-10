@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Listado from "./pages/Listado";
-import Devteam from "./pages/Devteam"
 import InfoApi from "./pages/InfoApi";
+import Devteam from "./pages/Devteam";
+import PokemonInfo from "./pages/PokemonInfo";
 import Navbar from "./components/Navbar";
-import PokemonDetalle from "./pages/InfoApi";
+
 
 export default function App() {
   return (
@@ -13,9 +14,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/listado" element={<Listado />} />
-        <Route path="/info-api" element={<InfoApi/>}/>
+        <Route path="/infoapi" element={<InfoApi/>}/>
         <Route path="/Devteam" element={<Devteam />} />
-        <Route path="/pokemon/:nombre" element={<PokemonDetalle/>}/>
+        <Route path="/pokemon/:nombre" element={<PokemonInfo/>}/>
       </Routes>
     </Router>
   );

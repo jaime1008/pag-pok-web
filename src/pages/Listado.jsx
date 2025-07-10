@@ -8,7 +8,7 @@ const Listado = () => {
 
   useEffect(() => {
     setLoadingList(true);
-    fetch('https://pokeapi.co/api/v2/pokemon?limit=20')
+    fetch('https://pokeapi.co/api/v2/pokemon?limit=541')
       .then(res => {
         if (!res.ok) throw new Error('Error al cargar listado de Pokémon');
         return res.json();

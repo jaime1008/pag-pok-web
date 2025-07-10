@@ -1,8 +1,8 @@
 const devs = [
-  { nombre: "Jaime Sánchez", rol: "Frontend" },
-  { nombre: "Martin Carvallo", rol: "Backend" },
-  { nombre: "Mathias Salinas", rol: "Diseño UX" },
-  { nombre: "Camila Montes", rol: "Testing" },
+  { nombre: "Jaime Sánchez", rol: "por definir" },
+  { nombre: "Martin Carvallo", rol: "por definir" },
+  { nombre: "Mathias Salinas", rol: "por definir" },
+  { nombre: "Camila Montes", rol: "por definir" },
 ];
 
 const Nosotros = () => (
